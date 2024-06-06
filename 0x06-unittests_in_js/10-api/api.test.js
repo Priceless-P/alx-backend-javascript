@@ -38,7 +38,7 @@ describe('', () => {
         request.post({
         url:`${API_URL}/login`,
         json: true,
-        body: {userName: 'Prisca'}
+        body: { userName: 'Prisca' }
         }, (_err, res, body) => {
           expect(res.statusCode).to.be.equal(200);
           expect(body).to.be.equal('Welcome Prisca');
